@@ -1,0 +1,15 @@
+workspace = { members = [ "cmd","common", "config", "server"] }
+[package]
+name = "FatCatServer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "fatcatserver"
+path = "cmd/main.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+tokio = "1.36.0"
