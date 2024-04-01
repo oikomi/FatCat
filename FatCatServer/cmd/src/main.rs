@@ -1,4 +1,5 @@
 use actix_web::{App, HttpServer, web};
+use server::http::ping;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
